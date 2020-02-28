@@ -6,13 +6,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background: black;
+    background: rgb(255, 255, 255);
+}
+
+ul{
+    list-style: inside;
 }
 
 .header{
     padding: 50px;
     text-align: left;
-    background-image:url(header.jpg);
+    background-image:url(Resume/header.jpg);
     color: rgb(77, 77, 77);
 }
 
@@ -21,9 +25,9 @@ body {
   padding: 20px;
   position: absolute;
   bottom: 0;
-  width:100%;
+  width:97%;
   text-align: center;
-  background-image:url(header1.jpg);
+  background-image:url(Resume/header1.jpg);
 }
 
 .header h1 {
@@ -45,12 +49,11 @@ p{
 
 /* Style the navigation bar links */
 .navbar a {
-  float:right;
-  /* display: block; */
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+    float:right;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 
 /* Change color on hover */
@@ -65,8 +68,32 @@ p{
     color: white;
 }
 
+/* This keeps the columns width less than the parents aka body*/
+#page-wrap { 
+    width: 95%; 
 
+    bottom: 0;
+    }
 
+#page-wrap > div {  
+    min-width: 50px; 
+    width: 100%; 
+    }
+
+#css-table { 
+            display: table; 
+        }
+        #css-table .col { 
+            display: table-cell; 
+             width: 25%;
+            padding: 20px; 
+        }
+        #css-table .col2 { 
+            display: table-cell; 
+            width: 25%;
+            padding: 10px;
+            text-align: left;
+        }
 
 </style>
 </head>
@@ -78,14 +105,102 @@ p{
 
         <div class="navbar">
             <a href="#" class="active">Home</a>
-            <a href="#">Link</a>
-            <a href="#">LinkedIn</a>
+            <a href="#">Project</a>
+            <a href="#">Work</a>
         </div>
 
-        <div class="footer">
+
+
+        <!-- <div id="page-wrap" style="margin: 0px 0px 0px 50px; padding: 50px 50px 50px 50px; background-image: url(Resume/Sacramento.jpg);">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div> -->
+
+
+        <div id="page-wrap" style="margin: 50px 0px 50px 50px;">
+            <div id="css-table">
+                <div class="col" style="background-image:url(Resume/Sacramento1.JPG); background-size: 100% 100%;"></div>
+                <div class="col" style="background: rgb(90, 75, 63);color: white; text-align: center;">
+                    <h2>Bacherlors of Science<br> Computer Science</h2>
+                    <p>I attended Sacramento State University from Fall of <b>August 2017</b> till Fall of <b>December 2019</b>. <br>I graduate with the Major GPA of 3.27 and a Cumulative GPA of 3.0</p>
+                    <h4>Relevant Courses</h4>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Software Engineering</li>
+                        <li>Database Management Systems</li>
+                        <li>Data Visualization</li>
+                        <li>Operating System Principles</li>
+                        <li>Data Structures</li>
+                        <li>Linear Algebra</li>
+                        <li>Differential Equations</li>
+                        <li>Engineering Statistics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-wrap" style="margin: 50px 0px 0px 50px;">
+            <div id="css-table">
+                
+                <div class="col2" style="text-align: center; background: rgb(90, 75, 63); color:white;">
+                    <h2>Certificate <br> Information Assurance and Security</h2>
+                    <ul>
+                        <li>Computer Networks</li>
+                        <li>Cryptography</li>
+                        <li>System Attacks and Countermeasures</li>
+                        <li>Digital Forensics</li>
+                    </ul>
+                    <p>Designation conferred by the National Security Agency and Department of Homeland Security for Academic years 2017 - 2022.<br><b>CNSS 4011 and 4012</b></p>
+                </div>
+
+                <div class="col2" style="padding:30px; background:#eee; text-align: center;">
+                    <h2>Activites</h2>
+                        <p><b>Association for Computer Machinery</b></p>
+                        <p>Joining ACM gave me the oppurtunity to meet and work with many CS students and alumni. I got to participate in a semester long hackathon project and learned essential career skills.</p>
+                        <br>
+                        <p><b>International Collegiate Programming Contest</b></p>
+                        <p>ICPC was an amazing experience. Out of 40 plus teams, My team placed in 12th. I helped break down and debug problems while our fastest typist(Talal) code the solution in Java</p>
+                </div>
+
+                <div class="col2" style="text-align: center; background: rgb(0, 0, 0); color:white;">
+                    <h2>Tools and Languages</h2>
+                    <div class="col2">
+                            <p><b>Linux</b> - 5 years</p>
+                            <p><b>Java</b> - 4 years</p>
+                            <p><b>C/C++</b> - 3 years</p>
+                            <p><b>Python</b> - 2 years</p>
+                            <p><b>GIT</b> - 2 years</p>
+                            <p><b>React</b> - 1 year</p>
+                    </div>
+                    <div class="col2">
+                            <p><b>Perl</b> - 1 year</p>
+                            <p><b>HTML/CSS</b> - 1 year</p>
+                            <p><b>Django</b> - 1 year</p>
+                            <p><b>Kotlin</b> - 1 year</p>
+                            <p><b>Shell Script</b> - 1 year</p>
+                    </div>
+                    <div class="col2">
+                            <p><b>Agile SCRUM</b></p>
+                            <p><b>Tableau</b></p>
+                            <p><b>Wireshark</b></p>
+                            <p><b>Metasploit</b></p>
+                            <p><b>Network Protocols</b></p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="footer">
             <h3>Contact Me</h3>
             <p>916 502-0295 <br></p>
             <p><b>Pawan.Prashil@outlook.com</b></p>
-        </div>
+        </div> -->
     </body>
 </html>
