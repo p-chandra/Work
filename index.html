@@ -4,30 +4,23 @@
 <style type="text/css">
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
     background: rgb(255, 255, 255);
 }
 
-ul{
-    list-style: inside;
+h2{
+    font-size: 65px;
+    margin-bottom: 10px;
 }
 
 .header{
-    padding: 50px;
-    text-align: left;
-    background-image:url(Resume/header.jpg);
-    color: rgb(77, 77, 77);
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width:97%;
-  text-align: center;
-  background-image:url(Resume/header1.jpg);
+    padding-top: 290px;
+    padding-left: 10px;
+    height: 100px;
+    text-align:left;
+    background-image:url(Resume/Sacramento9.jpg);
+    color: rgb(255, 255, 255);
 }
 
 .header h1 {
@@ -35,14 +28,26 @@ ul{
     margin-bottom: 0px;
 }
 
+/* Footer */
+.footer {
+  bottom: 0;
+  width:100%;
+  text-align: center;
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 p{
     margin-top:0px;
+    font-size: 18px;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: sticky;
+    position:sticky;
     position: -webkit-sticky;
     top: 0;
 }
@@ -70,8 +75,7 @@ p{
 
 /* This keeps the columns width less than the parents aka body*/
 #page-wrap { 
-    width: 95%; 
-
+    width: 100%; 
     bottom: 0;
     }
 
@@ -85,14 +89,8 @@ p{
         }
         #css-table .col { 
             display: table-cell; 
-             width: 25%;
-            padding: 20px; 
-        }
-        #css-table .col2 { 
-            display: table-cell; 
             width: 25%;
-            padding: 10px;
-            text-align: left;
+            padding: 20px; 
         }
 
 </style>
@@ -102,60 +100,39 @@ p{
             <h1>Pawan Chandra</h1>
             <p>Sacramento, CA</p>
         </div>
-
         <div class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#">Project</a>
             <a href="#">Work</a>
         </div>
-
-
-
-        <!-- <div id="page-wrap" style="margin: 0px 0px 0px 50px; padding: 50px 50px 50px 50px; background-image: url(Resume/Sacramento.jpg);">
-            <br>
-            <br>
-            <br>
-            <br>
-        </div> -->
-
-
-        <div id="page-wrap" style="margin: 50px 0px 50px 50px;">
-            <div id="css-table">
-                <div class="col" style="background-image:url(Resume/Sacramento1.JPG); background-size: 100% 100%;"></div>
-                <div class="col" style="background: rgb(90, 75, 63);color: white; text-align: center;">
-                    <h2>Bacherlors of Science<br> Computer Science</h2>
-                    <p>I attended Sacramento State University from Fall of <b>August 2017</b> till Fall of <b>December 2019</b>. <br>I graduate with the Major GPA of 3.27 and a Cumulative GPA of 3.0</p>
-                    <h4>Relevant Courses</h4>
-                    <ul>
-                        <li>Object Oriented Programming</li>
-                        <li>Software Engineering</li>
-                        <li>Database Management Systems</li>
-                        <li>Data Visualization</li>
-                        <li>Operating System Principles</li>
-                        <li>Data Structures</li>
-                        <li>Linear Algebra</li>
-                        <li>Differential Equations</li>
-                        <li>Engineering Statistics</li>
-                    </ul>
-                </div>
+        
+        <div id="page-wrap">
+            <div  style="background-image:url(Resume/Sacramento1.JPG); background-size: 100% 100%;">
+            </div>
+            <div style="color:#333; text-align:center; padding: 40px 0px 80px 0px;">
+                <h2>Bacherlors of Science<br>Computer Science</h2>
+                <p>I attended Sacramento State University from Fall of <b>August 2017</b> till Fall of <b>December 2019</b>.<br>I graduate with the Major GPA of 3.27 and a Cumulative GPA of 3.0</p>
             </div>
         </div>
 
-        <div id="page-wrap" style="margin: 50px 0px 0px 50px;">
-            <div id="css-table">
-                
-                <div class="col2" style="text-align: center; background: rgb(90, 75, 63); color:white;">
-                    <h2>Certificate <br> Information Assurance and Security</h2>
-                    <ul>
-                        <li>Computer Networks</li>
-                        <li>Cryptography</li>
-                        <li>System Attacks and Countermeasures</li>
-                        <li>Digital Forensics</li>
-                    </ul>
-                    <p>Designation conferred by the National Security Agency and Department of Homeland Security for Academic years 2017 - 2022.<br><b>CNSS 4011 and 4012</b></p>
-                </div>
 
-                <div class="col2" style="padding:30px; background:#eee; text-align: center;">
+
+        <div class="col2" style="text-align: center;background-color: rgb(46, 49, 48); color:rgb(255, 255, 255);padding: 10px 0px 80px 0px;">
+            <h2>Certificate <br> Information Assurance and Security</h2>
+                <ul>
+                    <li>Computer Network and Internet</li>
+                    <li>Cryptography</li>
+                    <li>System Attacks and Countermeasures</li>
+                    <li>Digital Forensics</li>
+                </ul>
+                <p>Designation conferred by the National Security Agency and Department of Homeland Security for Academic years 2017 - 2022.<br><b>CNSS 4011 and 4012</b></p>
+        </div>
+        
+        
+        
+        <div id="page-wrap">
+            <div id="css-table">
+                <div class="col" style="padding: 0px 30px 40px 30px; text-align: center;border: 5px solid rgb(46, 49, 48);">
                     <h2>Activites</h2>
                         <p><b>Association for Computer Machinery</b></p>
                         <p>Joining ACM gave me the oppurtunity to meet and work with many CS students and alumni. I got to participate in a semester long hackathon project and learned essential career skills.</p>
@@ -164,29 +141,35 @@ p{
                         <p>ICPC was an amazing experience. Out of 40 plus teams, My team placed in 12th. I helped break down and debug problems while our fastest typist(Talal) code the solution in Java</p>
                 </div>
 
-                <div class="col2" style="text-align: center; background: rgb(0, 0, 0); color:white;">
-                    <h2>Tools and Languages</h2>
-                    <div class="col2">
+                <div class="col" style="background-image:url(Resume/Simple3.jpg); background-size: 100% 100%; border: 5px solid rgb(46, 49, 48); color:rgb(43, 43, 43);">
+                    <h2 style="text-align: center;">Tools and Languages</h2>
+                    <div class="col" style="padding:10px;">
+                            
+                    </div>
+                    <div class="col" style="padding:10px;">
+                            
+                    </div>
+                    <div class="col" style="text-align: right;">
+                            
+                            <p><b>Django</b> - 1 year</p>
+                            <p><b>Kotlin</b> - 1 year</p>
+                            <p><b>Shell Script</b> - 1 year</p>
+                            <p><b>Agile SCRUM</b></p>
+                            <p><b>Tableau</b></p> 
+                            <p><b>Wireshark</b></p>
+                            <p><b>Metasploit</b></p>
+                            <p><b>Network Protocols</b></p>
+                    </div>
+                    <div class="col" style="text-align: right;">
                             <p><b>Linux</b> - 5 years</p>
                             <p><b>Java</b> - 4 years</p>
                             <p><b>C/C++</b> - 3 years</p>
                             <p><b>Python</b> - 2 years</p>
                             <p><b>GIT</b> - 2 years</p>
                             <p><b>React</b> - 1 year</p>
-                    </div>
-                    <div class="col2">
                             <p><b>Perl</b> - 1 year</p>
                             <p><b>HTML/CSS</b> - 1 year</p>
-                            <p><b>Django</b> - 1 year</p>
-                            <p><b>Kotlin</b> - 1 year</p>
-                            <p><b>Shell Script</b> - 1 year</p>
-                    </div>
-                    <div class="col2">
-                            <p><b>Agile SCRUM</b></p>
-                            <p><b>Tableau</b></p>
-                            <p><b>Wireshark</b></p>
-                            <p><b>Metasploit</b></p>
-                            <p><b>Network Protocols</b></p>
+                           
                     </div>
                 </div>
 
@@ -194,13 +177,10 @@ p{
             </div>
         </div>
 
-
-
-
-        <!-- <div class="footer">
+        <div class="footer">
             <h3>Contact Me</h3>
             <p>916 502-0295 <br></p>
             <p><b>Pawan.Prashil@outlook.com</b></p>
-        </div> -->
+        </div>
     </body>
 </html>
