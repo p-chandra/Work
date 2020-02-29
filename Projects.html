@@ -11,7 +11,13 @@ body {
     background: rgb(255, 255, 255);
 }
 
-iframe{ display: block; margin-left: auto; margin-right: auto;width: 100%;max-width: 400px;}
+iframe{ 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+    }
 h2{text-align: center; font-size: 30px;}
 p{padding-left: 20px; padding-right: 20px;}
 
@@ -54,7 +60,6 @@ p{padding-left: 20px; padding-right: 20px;}
     top: 0;
 }
 
-/* Style the navigation bar links */
 .navbar a {
     float:right;
     display: block;
@@ -64,23 +69,20 @@ p{padding-left: 20px; padding-right: 20px;}
     text-decoration: none;
 }
 
-/* Change color on hover */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Active/current link */
 .navbar a.active {
     background-color: #666;
     color: white;
 }
 
-
-.row{
-  display: -ms-flexbox; /* IE10 */
+ .row{
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -94,22 +96,22 @@ p{padding-left: 20px; padding-right: 20px;}
 .main {   
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
+  background-color: white;
   padding: 20px;
 }
 
- @media screen and (max-width: 1000px) {
+@media screen and (max-width: 720px) {
   .row {   
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
     width: 100%;
   }
-}
+} 
 
 </style>
 </head>
@@ -125,44 +127,59 @@ p{padding-left: 20px; padding-right: 20px;}
         <a href="Projects.html" class= "active">Project</a>
         <a href="Work.html">Work</a>
     </div>
+
+    <div class="row">
+        <div class="main">
+        </div>
+        <div class="side" style="background-color: #f1f1f1;">
+            <h2>Project: DuplicAgent</h2>
+            <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
+            . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
+        </div>
         
-
-    <div class="row" style="background-color: #ddd;">
-        <div class="main">
-            <h2>Video</h2>
-            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=fJ9rUzIMcZQ"></iframe> 
-        </div>
-        <div class="side">
-            <h2>Project: Student Attendance Tracker</h2>
-            <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
-            . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
-        </div>
     </div>
-
     
-    <div class="row" style="background-color: rgb(194, 194, 194);">
-        <div class="main">
-            <h2>Video</h2>
-            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=fJ9rUzIMcZQ"></iframe> 
-        </div>
-        <div class="side">
-            <h2>Project: Student Attendance Tracker</h2>
+    <div class="row">
+        <div class="main" style="background-color: #f1f1f1;">
+            <h2>Project: ByteMe</h2>
             <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
             . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
+        </div>
+        <div class="side">
+            <br>
         </div>
     </div>
 
-
-    <div class="row" style="background-color: rgb(139, 139, 139);">
+    <div class="row" >
         <div class="main">
-            <h2>Video</h2>
-            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=fJ9rUzIMcZQ"></iframe> 
         </div>
-        <div class="side">
+        <div class="side" style="background-color: #f1f1f1;">
             <h2>Project: Student Attendance Tracker</h2>
             <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
             . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
         </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="main" style="background-color: #f1f1f1;">
+            <h2>Project: Video Processor</h2>
+            <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
+            . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
+        </div>
+        <div class="side">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="main">
+        </div>
+        <div class="side" style="background-color: #f1f1f1;">
+            <h2>Project: Terminal Craiglist</h2>
+            <p >Website was developed using software <b>Java EE Eclipse</b>. I used <b>Gradle</b> as my build tool. Backend written in <b>Java</b> and front-end designed using <b>XML</b>
+            . The project uses the google sheet API to mark student present on the google doc sheets. The website ran on a local server with the help of <b>Apache Tom Cat</b></p>
+        </div>
+        
     </div>
 
 
