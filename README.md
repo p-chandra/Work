@@ -34,8 +34,9 @@ git revert <commit 1> <commit 2>    //If you want to revert a change that you ha
 
 git add .                           //adds all modified and new files to current directory
 
-//Erase your changes and pull from master
-git reset --hard origin/master
+//Erase your local changes and pull from master
+git reset --hard 
+git pull origin/master
 
 ```
 *** `pull` is designed around merging changes together in some way, whereas `reset` is designed around simply making your local copy match a specific commit.***
