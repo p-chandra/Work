@@ -3,67 +3,64 @@
 <head>
 <style type="text/css">
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+    }
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
     background: rgb(255, 255, 255);
-}
+    }
 
-h1 { font-size: 45px; text-align:center; margin-bottom: 0px; }
-h2 { font-size: 30px; letter-spacing: 0.02em; margin: 5px 0px 0px 0px; text-align:center;}
-h3 { font-size: 20px; text-align:center; margin: 5px 0px 0px 0px;}
-p {font-size: 15px; margin: 2px 0px 0px 0px;}
-a{padding: 5px; font-size: 17px; color: white;}
-ul{text-align: center;}
+h2{
+    font-size: 65px; 
+    margin-bottom: 10px;
+    }
 
-li{padding-bottom: 10px; font-size: 18px;}
+li{
+    padding-bottom: 10px; 
+    font-size: 17px;
+    }
 
+p {
+    font-size: 17px;
+    }
+
+a{
+    padding: 5px; 
+    font-size: 17px; 
+    color: white;
+    }
 
 .header{
     padding-top: 190px;
     padding-left: 10px;
     height: 300px;
     text-align:left;
+    text-shadow: rgb(255, 255, 255);
     background-image:url(Images/DigitalHeader.jpg);
-    color: rgb(255, 255, 255);
-}
+    color: rgb(255, 255, 255)
+    }
 
 .header h1 {
     font-size: 45px;
     margin-bottom: 0px;
-}
+    }
 
 .header p{
     font-size: 20px;
     margin: 0px;
-}
+    }
 
-/* Footer */
 .footer {
-  bottom: 0;
-  width:100%;
-  text-align: center;
-  background-color: rgb(0, 0, 0); 
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.1s;
-  width: 80%;
-  padding: 10px;
-  margin: 50px auto 50px auto;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  align-content: center;
-}
-
-.card:hover {box-shadow: 0 8px 12px 8px  #343535;}
-
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
 
 .navbar {
     overflow: hidden;
@@ -71,9 +68,8 @@ li{padding-bottom: 10px; font-size: 18px;}
     position:sticky;
     position: -webkit-sticky;
     top: 0;
-}
+    }
 
-/* Style the navigation bar links */
 .navbar a {
     float:right;
     display: block;
@@ -81,155 +77,129 @@ li{padding-bottom: 10px; font-size: 18px;}
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-}
+    }
 
-/* Change color on hover */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
-}
+    }
 
-/* Active/current link */
 .navbar a.active {
     background-color: #666;
     color: white;
-}
+    }
 
-.centerimage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+.row{
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
 
-.container {
-  font-size: 18px;
-  margin: 0px 70px 0px 70px;
-}
+.side {
+    -ms-flex: 50%;
+    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    }
 
+.main {   
+    -ms-flex: 50%;
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+    }
+
+ @media screen and (max-width: 720px) {
+    .row {   
+        flex-direction: column;
+        }
+    }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 720px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
+    .navbar a {
+        float: none;
+        width: 100%;
+        }
+    }
 
 </style>
+
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<body>
-    <div class="header">
-        <h1 style="text-align: left;">Pawan Chandra</h1>
-        <p>Sacramento, CA</p>
-    </div>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Projects.html" >Project</a>
-        <a href="Work.html" class= "active">Work</a>
-    </div>
+    <body>
+        <div class="header">
+            <h1>Pawan Chandra</h1>
+            <p>Sacramento, CA</p>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="Projects.html">Project</a>
+            <a href="Work.html">Work</a>
+        </div>
         
-    <div class="card">
-        <img src="Images/calepa.png" class="centerimage" style="width: 100px;" />
-        <h1>California Environmental Protection Agency</h1>
-        <h2> IT Intern</h2>
-        <h3>June 2017 – July 2018</h3>
-        <br>
-        <p class="container"> At CalEPA I had the oppurtunity to work with their IT department and also shadow their Procurement division My responsibilites included:
-              <ul>
-                    <li>Diagnosing and troubleshooting computing and network errors</li>
-                    <li>Managing customer's IT related issues through the ticketing system</li>
-                    <li>Imaging laptops, tablets, and desktops</li>
-                    <li>Create bids for hardware and software technologies for all CalEPA branches</li>
-                    <li>Introduced to Fi$CAL and documenting RFOs and RFQs</li>
-              </ul>  
-        </p>
-        <br></br>
-    </div>
+        <div style="color:#333; text-align:center; padding: 50px 0px 90px 0px; background-image: url(Images/Simple8.jpg);">
+            <h2>Bachelors of Science</h2><h3 style="font-size: 40px; margin: 5px;">Computer Science</h3>
+            <p>I attended Sacramento State University from Fall of <b>August 2017</b> to Fall of <b>December 2019</b>.<br>I graduated with a Major GPA of 3.27 and a Cumulative GPA of 3.0</p>
+            <img src="Images/Sacramento.png" style="width: 100px;">
+        </div>
 
-    <div class="card">
-        <img src="Images/homedepot.png" class="centerimage" style="width: 100px;" />
-        <h1>Home Depot</h1>
-        <h2>Seasonal Cashier</h2>
-        <h3>April 2015 – September 2015</h3>
-        <br>
-        <p class="container">
-            My role as a cashier at Home Depot meant I had to memorize the store layout and the names and functions of each object. My responsibilites included:
-            <ul>
-                <li>Monitoring and assisting customers at self checkout registers</li>
-                <li>Overseeing inventory</li>
-                <li>Working graveyard as a stock crew member</li>
-            </ul>
-        </p>
-        <br></br>
-    </div>
+        <div style="text-align: center;background-color: rgb(46, 49, 48); color:rgb(255, 255, 255);padding: 10px 30px 80px 30px;">
+            <h2 style="margin: 20px 0px 10px 0px;">Certificate</h2><h3 style="font-size: 40px; margin: 5px;"> Information Assurance and Security</h3>
+                <ul>
+                    <li style="padding-bottom: 0px;">Computer Network and Internet</li>
+                    <li style="padding-bottom: 0px;">Cryptography</li>
+                    <li style="padding-bottom: 0px;">System Attacks and Countermeasures</li>
+                    <li style="padding-bottom: 0px;">Digital Forensics</li>
+                </ul>
+                <p>Designation conferred by the National Security Agency and Department of Homeland Security for Academic years 2017 - 2022.<br><b>CNSS 4011 and 4012</b></p>
+        </div>
+        
+        
+            <div class="row">
+                <div class="main" style="padding: 0px 30px 40px 30px; text-align: center;border: 5px solid rgb(46, 49, 48);">
+                    <h2>Activites</h2>
+                        <p><b>Association for Computer Machinery (ACM)</b></p>
+                        <p>Joining ACM gave me the oppurtunity to meet and work with many CS students and alumni. I participated in a semester long hackathon project and learned essential career skills.</p>
+                        <br>
+                        <p><b>International Collegiate Programming Contest (ICPC)</b></p>
+                        <p>ICPC was an amazing experience. Out of 40 plus teams, my team placed in 12th. I helped break down and debug problems while our fastest typist (Talal) code the solution in Java</p>
+                </div>
 
-    <div class="card">
-        <img src="Images/thundervalley.jpg" class="centerimage" style="width: 100px;" />
-        <h1>Thunder Valley Casino</h1>
-        <h2>Poker Clerk/Banker</h2>
-        <h3>March 2014 – November 2014</h3>
-        <br>
-        <p class="container" style="text-align: center;">
-              The poker room was a new addition to Thunder Valley Casino when I started. My position required:
-              <ul>
-                  <li>Adaptating to a fast and constantly changing workplace</li>
-                  <li>Knowledge of all varients of the classic poker games</li>
-                  <li>Handling large sums of money and paying out promotional victory hands</li>
-              </ul>  
-        </p>
-        <br></br>
-    </div>
+                <div class="side" style="background-image:url(Images/Simple7.jpg); border: 5px solid rgb(46, 49, 48); color:rgb(29, 29, 29);">
+                    <h2 style="text-align: center;">Tools and Languages</h2>
+                        <ul style="text-align: left; column-count:3;">
+                            <li><b>Linux</b> - 5 years</li>
+                            <li><b>Java</b> - 4 years</li>
+                            <li><b>C/C++</b> - 3 years</li>
+                            <li><b>Python</b> - 2 years</li>
+                            <li><b>GIT</b> - 2 years</li>
+                            <li><b>React</b> - 1 year</li>
+                            <li><b>Perl</b> - 1 year</li>
+                            <li><b>HTML/CSS</b> - 1 year</li>
+                            <li><b>Django</b> - 1 year</li>
+                            <li><b>Kotlin</b> - 1 year</li>
+                            <li><b>Shell Script</b> - 1 year</li>
+                            <li><b>Agile</b></li>
+                            <li><b>Tableau</b></li> 
+                            <li><b>Wireshark</b></li>
+                            <li><b>Metasploit</b></li>
+                        </ul>
+            </div>
+              
 
-    <div class="card">
-        <img src="Images/kobra.jpg" class="centerimage" style="width: 100px;" />
-        <h1>Kobra Enterprise</h1>
-        <h2>Accounting Assitant</h2>
-        <h3>December 2012 – March 2014</h3>
-        <br>
-        <p class="container">
-            At Kobra Enterprise I learned about the complexity behind running a resturant business and the importance of balancing books. Some of my responsibilites included:
-            <ul>
-                <li>Working with Profit and Losses using the Quickbook Software</li>
-                <li>Helping with account receivable and payable </li>
-                <li>Dealing with 1000s of invoices per month</li>
-                <li>Creating paystubs for 100s of employees using Intuit Software.</li>
-            </ul> 
-        </p>
-        <br></br>
-    </div>
-
-    <div class="card">
-        <img src="Images/tacobell.jpg" class="centerimage" style="width: 100px;" />
-        <h1>Taco Bell</h1>
-        <h2>Cashier</h2>
-        <h3>December 2011 – December 2013</h3>
-        <br>
-        <p class="container">
-              At Taco Bell team work and communication was essential to sustain a stress-free environment. My responsibilites included:
-              <ul>
-                  <li>Maintaining a safe and clean lobby</li>
-                  <li>Washing dishes</li>
-                  <li>Meal preperation</li>
-                  <li>Handling cash, credit, or check transactions.</li>
-              </ul>  
-        </p>
-        <br></br>
-    </div>
-
-
-    <div class="footer">
-        <h3>Contact Me</h3>
-        <a href="https://www.linkedin.com/in/p-chandra/"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/p-chandra"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <br>
-        <br>
-        <a href="Images/Pawan Chandra_Resume.pdf" download>
-            Download Resume
-          </a>
-        <p><b>Pawan.Prashil@outlook.com</b></p>
-    </div>
+        <div class="footer">
+            <h3>Contact Me</h3>
+            <a href="https://www.linkedin.com/in/p-chandra/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/p-chandra"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <br>
+            <br>
+            <a href="Images/Pawan Chandra_Resume.pdf" download>
+                Download Resume
+              </a>
+            <p><b>Pawan.Prashil@outlook.com</b></p>
+        </div>
     </body>
 </html>
